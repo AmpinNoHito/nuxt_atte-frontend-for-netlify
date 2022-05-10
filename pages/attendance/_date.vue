@@ -54,8 +54,7 @@
 <script>
 import auth from '~/middleware/auth';
 export default {
-  
-  middleware: [auth],
+  /* middleware: [auth], */
   async asyncData({ route , $axios}) {
     const res = await $axios.get(`api/work/index/${route.params.date}`);
     const range = 7;
