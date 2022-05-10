@@ -20,7 +20,6 @@
         </span>
         <span 
           class="header__nav-item"
-          v-if="$store.state.auth.authUser"
           @click="logout">
           ログアウト
         </span>
